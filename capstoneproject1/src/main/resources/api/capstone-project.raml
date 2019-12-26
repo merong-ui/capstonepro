@@ -1,0 +1,81 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/20eda4d0-7a77-4828-967c-f97292776c0b/ # 
+version: 1.0
+title: capstone project
+/user:
+  get:
+    description: Get all users
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include all_user.json     
+      400:
+        body:
+          application/json:
+            example: !include Message_Error.json            
+  post:
+    description: create user
+    body:
+      application/json:
+        example: [{"first": "Adam",
+                  "last": "Bob",
+                  "department": "IIB"
+                   } ]
+    responses:
+      201:
+        body:
+          application/json:
+            example: !include all_user.json
+      400:
+        body:
+          application/json:
+            example: {"message":"user already exists"}                       
+  /{id}:
+   get:
+    description: user by id    
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include all_user.json     
+      400:
+        body:
+          application/json:
+            example: !include Message_Error.json 
+   put:
+    description: Update a single user
+    body:
+      application/json:
+        example: !include all_user.json      
+    responses:
+      200:
+        body:
+          application/json:
+            example: {"message":"user updated" }     
+   delete:
+    body:
+      application/json:
+        example: !include all_user.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: {"message":"user deleted"}
+      400:
+        body:
+          application/json:
+            example: !include Message_Error.json
+                        
+                     
+  
+    
+    
+
+            
+              
+              
+
+              
+              
+      

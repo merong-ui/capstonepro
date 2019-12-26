@@ -1,0 +1,28 @@
+{
+  "configs": [
+    "capstone-project.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:capstoneproject1:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.2.0",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "api/all_user.json",
+        "api/capstone-project.raml",
+        "api/Message_Error.json",
+        "application-types.xml",
+        "capstone-project.xml",
+        "log4j2.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

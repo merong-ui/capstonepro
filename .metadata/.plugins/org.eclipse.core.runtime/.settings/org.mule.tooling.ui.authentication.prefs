@@ -1,0 +1,5 @@
+authenticated.users=[{"id"\:"365a351d-00fb-4447-ab30-293cd644ffa4","token"\:"6d3f6b7b-e09f-4b28-8eeb-eb3ec7e3aed6","userId"\:"meryy","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=6d3f6b7b-e09f-4b28-8eeb-eb3ec7e3aed6
+current.user=meryy
+eclipse.preferences.version=1
+expiration.time=30
